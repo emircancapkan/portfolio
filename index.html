@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website - Emircan Çapkan</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shojumaru&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/84a908d655.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="photos/logo.webp" alt="" class="logo" />
+
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#works">My Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <p>Computer Engineer</p>
+          <br />
+          <hr />
+          <h1>
+            Hi, I'm <span>Emircan</span> <br />
+            From Turkey
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------ABOUT ME------------------ -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="photos/emircan_capkan.webp" alt="" />
+          </div>
+
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am a computer engineering student at Kadir Has University and at the same time I am doing a minor in management information 
+              systems. I have developed projects with C++ and Python languages. I have interned as a web developer at LLC Soft and independently 
+              design projects on web development and put a lot of effort into HTML, CSS and JavaScript languages. I also worked on information 
+              ethics, public ethics and artificial intelligence-human interaction at the Ethics and Philosophy Club of the university.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('volunteer works')">Volunteer Works</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="education">
+              <ul>
+                <li>
+                  <div class="about-logo">
+                    <img src="photos/kadir-has-universitesi-logo.webp" alt="" />
+                  </div>
+                  <div class="content">
+                    <span>2020 - 2025</span><br />Kadir Has University -
+                    Computer Engineering
+                  </div>
+                </li>
+
+                <li>
+                  <div class="about-logo">
+                    <img src="photos/kadir-has-universitesi-logo.webp" alt="" />
+                  </div>
+                  <div class="content">
+                    <span>2022 - 2025</span><br />Kadir Has University -
+                    Management Information System (Minor)
+                  </div>
+                </li>
+
+                <li>
+                  <div class="about-logo">
+                    <img src="photos/kiroal.webp" alt="" />
+                  </div>
+                  <div class="content">
+                    <span>2015 - 2019</span><br />Kırımlı İsmail Rüştü Olcay Anatolian High School
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <div class="about-logo">
+                    <img src="photos/llcsoft_logo.webp" alt="" />
+                  </div>
+                  <div class="content">
+                    <span>2023</span><br />LLC Soft - Web Developer
+                  </div>
+                </li>
+            </div>
+
+            <div class="tab-contents" id="skills">
+              <ul>
+                <li>
+                  <div class="about-logo">
+                    <img src="photos/C.webp" alt="" />
+                  </div>
+                  <div class="content">
+                    <span>C Programming language</span><br />Object Oriented and Embedded Systems
+                  </div>
+                </li>
+
+                <li>
+                  <div class="about-logo">
+                    <img src="photos/C++.webp" alt="" />
+                  </div>
+                  <div class="content">
+                    <span>C++ Programming language</span><br />Object Oriented and Embedded Systems
+                  </div>
+                </li>
+
+                <li>
+                  <div class="about-logo">
+                    <img src="photos/HTML.webp" alt="" />
+                  </div>
+                  <div class="content">
+                    <span>HTML</span><br />Standard Markup Language
+                  </div>
+                </li>
+                
+                <li>
+                  <div class="about-logo">
+                    <img src="photos/CSS.webp" alt="" />
+                  </div>
+                  <div class="content">
+                    <span>CSS</span><br />Style Sheet Language
+                  </div>
+                </li>
+
+                <li>
+                  <div class="about-logo">
+                    <img src="photos/JavaScript.webp" alt="" />
+                  </div>
+                  <div class="content">
+                    <span>JavaScript Programming language</span><br />Update and Change Both HTML and CSS
+                  </div>
+                </li>
+
+                <li>
+                  <div class="about-logo">
+                    <img src="photos/microsoft-office.webp" alt="" />
+                  </div>
+                  <div class="content">
+                    <span>Microsoft Office</span><br />Data Analysis and Various
+                    Operations
+                  </div>
+                </li>
+
+                <li>
+                  <div class="about-logo">
+                    <img src="photos/Python.png" alt="" />
+                  </div>
+                  <div class="content">
+                    <span>Python Programming language</span><br />Data Analysis and Machine Learning
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="certificates">
+              <ul>
+                <li>
+                  <div class="about-logo">
+                    <img src="photos/R.png" alt="" />
+                  </div>
+                  <div class="content">
+                    <span>TEKYAZ Technological Software</span><br />TEKYAZ
+                    Certified SolidWorks <br />
+                    <a href="photos/TYM2L6H3.pdf" download="certificate"
+                      ><i class="fa-solid fa-download"></i
+                    ></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="volunteer works">
+              <ul>
+                <li>
+                  <div class="about-logo">
+                    <img src="photos/Wikimedia-logo.png" alt="" />
+                  </div>
+                  <div class="content">
+                    <span>2022</span><br />Wikimedia Foundation - Content
+                    Producer <br />
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------- MY HOBBIES ------------>
+
+    <div id="works">
+      <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="drawings-list">
+          <div class="drawings">
+            <img src="photos/c++_project.webp" />
+            <div class="layer">
+              <h3>Creating a Student Portal with C++ Programming Language</h3> <br>
+              <p>
+                Creating software to manage the activities of individuals (students, assistants and professors) within the university.
+              </p>
+            </div>
+          </div>
+
+          <div class="drawings">
+            <img src="photos/machine_learning.webp" />
+            <div class="layer">
+              <h3>Machine Learning</h3> <br>
+              <p>
+                Applying machine learning by data cleaning and data processing on the Titanic dataset.
+              </p>
+            </div>
+          </div>
+
+          <div class="drawings">
+            <img src="photos/web_projects.webp" />
+            <div class="layer">
+              <h3>Web Development</h3> <br>
+              <p>
+                A website developer manages the front-end and back-end development process of a website, usually using one or more programming languages (such as HTML, CSS, JavaScript) and web technologies.
+              </p>
+            </div>
+          </div>
+        </div>
+        <a
+          href="https://github.com/emircancapkan"
+          class="seemore"
+          target="_blank"
+          >See More</a
+        >
+      </div>
+    </div>
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact</h1>
+            <div class="contact-mail">
+              <a href="mailto:emircancapkan@gmail.com"
+                ><p>
+                  <i class="fa-solid fa-envelope"></i
+                  >emircancapkan@gmail.com
+                </p></a
+              >
+            </div>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/emircancapkan/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/emircancapkan/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/emircancapkan"><i class="fa-brands fa-github"></i></a>
+              <a href="https://medium.com/@emircancapkan"><i class="fab fa-medium"></i></a>
+              <a href="https://leetcode.com/emircancapkan/"><img src="photos/leetcode_icon.webp"></a>
+            </div>
+            <a href="photos/emircan_capkan_cv.pdf" download="CV" class="btn"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your name" required />
+              <input
+                type="email"
+                name="e-mail"
+                placeholder="Your e-mail"
+                required
+              />
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Your message"
+              ></textarea>
+              <button type="submit" class="btn" style="margin-top: 10px">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <hr class="footer-hr" />
+      </div>
+      <div class="copyright">
+        <p>
+          copyright ©️ emircancapkan. Made by emircan.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "-150px";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-300px";
+      }
+    </script>
+  </body>
+</html>
